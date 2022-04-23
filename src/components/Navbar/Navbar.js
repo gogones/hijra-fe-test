@@ -1,9 +1,12 @@
 import React from "react";
 import "./Navbar.scss";
-import { MdOutlineSearch, MdOutlineShoppingCart } from "react-icons/md";
+import { MdOutlineShoppingCart } from "react-icons/md";
 import { HiOutlineMenu } from "react-icons/hi";
 import { FiChevronDown } from "react-icons/fi";
 import SideMenu from "../SideMenu";
+import SearchField from "../SearchField";
+import Flex from "../Flex";
+import Button from "../Button";
 
 const Navbar = () => {
   const menus = [
@@ -14,31 +17,43 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="navbar-inner" style={{ display: "flex" }}>
-        <div className="left" style={{ display: "flex" }}>
+      <Flex
+        container
+        justifyContent="space-between"
+        alignItems="center"
+        className="navbar-inner"
+      >
+        <Flex
+          item
+          container
+          justifyContent="center"
+          alignItems="center"
+          className="left"
+        >
           {menus.map((menu, index) => (
-            <div key={index}>
-              <a href={menu.link} className="item-link">
-                {menu.label}
-              </a>
-              <FiChevronDown />
-            </div>
+            <Flex item key={index} className="menu-button-container">
+              <Button variant="text" className="menu-button">
+                <Flex container justifyContent="center" alignItems="center">
+                  {menu.label}
+                  <FiChevronDown />
+                </Flex>
+              </Button>
+            </Flex>
           ))}
-        </div>
+        </Flex>
 
-        <div className="right" style={{ display: "flex" }}>
-          <div>
-            <MdOutlineShoppingCart />
-          </div>
-          <div>
-            <MdOutlineSearch />
-            <input type="text" className="search-input" placeholder="Search" />
-          </div>
-          <div>
-            <HiOutlineMenu />
-          </div>
-        </div>
-      </div>
+        <Flex container item className="right">
+          <Button variant="icon">
+            <MdOutlineShoppingCart className="cart-icon" />
+          </Button>
+
+          <SearchField />
+
+          <Button variant="icon">
+            <HiOutlineMenu className="burger-icon" />
+          </Button>
+        </Flex>
+      </Flex>
 
       <SideMenu />
     </div>

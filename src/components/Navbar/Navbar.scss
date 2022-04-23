@@ -8,19 +8,27 @@
   z-index: 9;
 
   &-inner {
-    display: flex;
-    justify-content: space-between;
+    height: 100%;
 
-    & > * {
+    & > .left, & > .right {
       padding: 10px 30px;
-    }
-
-    & .left, & .right {
-      display: flex;
 
       & > * {
         padding: 0 20px;
       }
+    }
+
+    & .menu-button-container {
+      width: 80px;
+
+      & .menu-button {
+        width: auto;
+      }
+    }
+
+    & .cart-icon, & .burger-icon {
+      width: 28px;
+      height: 28px;
     }
   }
 }
