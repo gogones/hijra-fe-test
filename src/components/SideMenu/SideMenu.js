@@ -5,6 +5,7 @@ import { FiLifeBuoy } from "react-icons/fi";
 import { HiOutlineVideoCamera } from "react-icons/hi";
 import "./SideMenu.scss";
 import MenuItem from "../MenuItem";
+import Button from "../Button";
 
 const SideMenu = () => {
   const menus = [
@@ -19,7 +20,9 @@ const SideMenu = () => {
   return (
     <div className="sidemenu-container">
       {menus.map((menu, index) => (
-        <MenuItem key={index}>{menu.icon}</MenuItem>
+        <MenuItem key={index}>
+          <Button variant="icon">{menu.icon}</Button>
+        </MenuItem>
       ))}
     </div>
   );
