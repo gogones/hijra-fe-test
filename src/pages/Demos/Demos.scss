@@ -1,7 +1,7 @@
 @import 'src/theme/variables.scss';
 
 .page-content {
-  padding-top: calc(#{$navbar-height} + 10px);
+  padding-top: $navbar-height;
 }
 
 .banner-hero {

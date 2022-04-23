@@ -3,7 +3,8 @@ import "./Demos.scss";
 import Navbar from "../../components/Navbar";
 import Portofolio from "../../components/Portofolio";
 import Button from "../../components/Button";
-// import bannerImage from "assets/img/banner.jpg";
+import { FiChevronRight } from "react-icons/fi";
+import Flex from "../../components/Flex";
 
 const Demos = () => {
   return (
@@ -26,7 +27,12 @@ const Demos = () => {
               If the meal is not perfect, your event cannot be perfect.
             </div>
 
-            <Button>Request a Quote &gt;</Button>
+            <Button>
+              <Flex container justifyContent="center" alignItems="center">
+                <div>Request a Quote</div>
+                <FiChevronRight />
+              </Flex>
+            </Button>
           </div>
 
           <div className="banner-image-backdrop" />
