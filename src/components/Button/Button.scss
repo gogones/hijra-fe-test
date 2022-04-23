@@ -2,8 +2,35 @@
   height: 40px;
   border-radius: 24px;
   width: 160px;
-  background-color: forestgreen;
   border: none;
   box-sizing: border-box;
   color: #fff;
+  box-shadow: none;
+  cursor: pointer;
+
+  &.button-filled {
+    background-color: forestgreen;
+  }
+
+  &.button-outlined {
+    background-color: transparent;
+    border: 1px solid #531111;
+  }
+
+  &.button-text {
+    background-color: transparent;
+    border: none;
+    color: #282c34;
+    font-weight: bold;
+  }
+
+  &.button-icon {
+    padding: 0;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    color: #282c34;
+  }
+
 }
