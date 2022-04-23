@@ -1,0 +1,14 @@
+.search {
+  &-field {
+    border-radius: 8px;
+    height: 32px;
+    border: 1px solid #676363;
+    padding-left: 12px
+  }
+
+  &-icon {
+    width: 28px;
+    height: 28px;
+    padding-right: 4px;
+  }
+}
