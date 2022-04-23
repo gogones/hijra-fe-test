@@ -6,13 +6,8 @@ import "./SearchField.scss";
 const SearchField = () => {
   return (
     <Flex container justifyContent="center" alignItems="center">
-      <Flex item>
-        <MdOutlineSearch className="search-icon" />
-      </Flex>
-
-      <Flex item>
-        <input type="text" placeholder="Search" className="search-field" />
-      </Flex>
+      <MdOutlineSearch className="search-icon" />
+      <input type="text" placeholder="Search" className="search-field" />
     </Flex>
   );
 };
