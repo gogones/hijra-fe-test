@@ -1,0 +1,64 @@
+@import 'src/theme/variables.scss';
+
+.page-content {
+  padding-top: calc(#{$navbar-height} + 10px);
+}
+
+.banner-hero {
+  height: 70vh;
+  background-image: url('/assets/img/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  & .banner-image-backdrop {
+    position: absolute;
+    background-color: rgba(40, 44, 52, 0.47);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  & .wave-decorator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/img/wave.png');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  & .banner-content-container {
+    padding: 20px 320px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    & > * {
+      margin: 20px 0;
+    }
+
+    & .title {
+      &-banner {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+
+      &-standout-banner{
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      &-detail {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+}
