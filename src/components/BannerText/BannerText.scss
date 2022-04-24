@@ -1,0 +1,27 @@
+.banner-text-container {
+  text-align: center;
+  padding: 20px 200px;
+
+  @media screen and (max-width: 600px) {
+    padding: 20px;
+  }
+
+  & > * {
+    margin: 16px 0;
+  }
+
+    & .title-banner {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    & .subtitle-banner {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    & .detail-banner {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+}
