@@ -4,4 +4,8 @@
   top: 50vh;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 600px) {
+    position: static;
+  }
 }
