@@ -1,15 +1,35 @@
 @import 'src/theme/variables.scss';
 
+.app-content {
+  display: flex;
+}
+
 .page-content {
   padding-top: $navbar-height;
 }
 
-.banner-hero {
+.banner {
   height: 70vh;
   background-image: url('/assets/img/banner.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
+
+  & .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+    & .banner-text {
+      color: #fff;
+      position: relative;
+      z-index: 1;
+
+      & > * {
+        margin: 20px 0;
+      }
+    }
+  }
 
   & .banner-image-backdrop {
     position: absolute;
@@ -30,35 +50,6 @@
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
-  }
-
-  & .banner-content-container {
-    padding: 20px 320px;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-
-    & > * {
-      margin: 20px 0;
-    }
-
-    & .title {
-      &-banner {
-        font-size: 1.25rem;
-        font-weight: bold;
-      }
-
-      &-standout-banner{
-        font-size: 2rem;
-        font-weight: bold;
-      }
-
-      &-detail {
-        font-size: 1rem;
-        font-weight: bold;
-      }
-    }
   }
 
 }
