@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/hijra-fe-test/static/css/main.002bfef1.css",
+    "main.css": "/hijra-fe-test/static/css/main.c5c78d3f.css",
     "main.js": "/hijra-fe-test/static/js/main.7dbfb7f3.js",
     "static/js/787.47af9e15.chunk.js": "/hijra-fe-test/static/js/787.47af9e15.chunk.js",
     "static/media/banner.jpg": "/hijra-fe-test/static/media/banner.4bff2302f151c681466c.jpg",
     "static/media/wave.png": "/hijra-fe-test/static/media/wave.e07c86c9bd1fd58fa973.png",
     "index.html": "/hijra-fe-test/index.html",
-    "main.002bfef1.css.map": "/hijra-fe-test/static/css/main.002bfef1.css.map",
+    "main.c5c78d3f.css.map": "/hijra-fe-test/static/css/main.c5c78d3f.css.map",
     "main.7dbfb7f3.js.map": "/hijra-fe-test/static/js/main.7dbfb7f3.js.map",
     "787.47af9e15.chunk.js.map": "/hijra-fe-test/static/js/787.47af9e15.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.002bfef1.css",
+    "static/css/main.c5c78d3f.css",
     "static/js/main.7dbfb7f3.js"
   ]
 }
