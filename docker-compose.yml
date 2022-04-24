@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  hijra-test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: hijra-test
+    ports:
+      - '8080:8080'
