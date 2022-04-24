@@ -1,67 +1,124 @@
 .portofolio {
-  & .banner-content-container {
-    padding: 20px 200px;
-    text-align: center;
-
-    & > * {
-      margin: 16px 0;
-    }
-
-    & .title {
-      &-banner {
-        font-size: 1.25rem;
-        font-weight: bold;
-      }
-
-      &-standout-banner{
-        font-size: 2rem;
-        font-weight: bold;
-      }
-
-      &-detail {
-        font-size: 1rem;
-        font-weight: bold;
-      }
-    }
-  }
-
   &-layout {
     display: flex;
 
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+
     & .left-column {
       flex: 1;
-      padding: 0 20px;
-      text-align: left;
-      background-color: #676363;
+      padding: 20px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      background-color: #404040;
+      display: flex;
+
+      & .label {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+      }
     }
 
     & .right-column {
-      flex: 2;
-      padding: 0 20px;
+      display: flex;
+      flex: 4;
+      padding: 20px;
       text-align: left;
+      background-color: #312729;
+
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+      }
+
+      & .label-service {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 24px;
+        color: #f77f85;
+      }
+
+      & .main-description {
+        font-size: 1.25rem;
+        margin-bottom: 24px;
+        color: #a6858f;
+      }
+
+      & .detail-description {
+        font-size: 1rem;
+        margin-bottom: 24px;
+        color: #a6858f;
+      }
+
+      & .button-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        @media screen and (min-width: 600px) and (max-width: 900px) {
+          flex-direction: column;
+
+          & > * {
+            margin-bottom: 12px;
+            height: 24px;
+          }
+        }
+
+        & > * {
+          flex-grow: 0;
+        }
+
+        & > :first-child {
+          margin-right: 10px;
+        }
+      }
     }
 
     & .card-portofolio {
-      flex: 2;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
 
       &-item {
+        & > * {
+          margin-bottom: 20px;
+        }
+
         flex: 0 0 40%;
         margin: 10px;
         padding: 10px;
-        background-color: #fff;
+        background-color: #362a2e;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease-in-out;
+
+        @media screen and (max-width: 600px) {
+          flex: 0 0 100%;
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 900px) {
+          flex: 0 0 80%;
+        }
 
         &:hover {
           transform: scale(1.05);
         }
 
+        &-label {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: #f77f85;
+        }
+
         &-icon {
-          width: 120px;
+          color: #a6858f;
+        }
+
+        &-description {
+          color: #a6858f;
         }
       }
     }
